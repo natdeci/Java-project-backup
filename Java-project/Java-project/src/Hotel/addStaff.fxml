@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Hotel.Menu">
+   <children>
+      <SplitPane dividerPositions="0.311787072243346" prefHeight="475.0" prefWidth="528.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="29.0" layoutY="46.0" mnemonicParsing="false" onAction="#guestMenu" prefHeight="30.0" prefWidth="104.0" text="Guest" />
+                  <Button layoutX="29.0" layoutY="112.0" mnemonicParsing="false" onAction="#staffMenu" prefHeight="30.0" prefWidth="104.0" text="Staff" />
+                  <Button layoutX="29.0" layoutY="172.0" mnemonicParsing="false" onAction="#managementMenu" prefHeight="30.0" prefWidth="104.0" text="Management" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="310.0">
+               <children>
+                  <Text layoutX="118.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Staff" textAlignment="CENTER" wrappingWidth="121.13671875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="160.0" layoutY="427.0" mnemonicParsing="false" onAction="#addStaff" text="Add" />
+                  <Text layoutX="30.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                  <Text layoutX="30.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" />
+                  <Text fx:id="PhoneError" fill="RED" layoutX="30.0" layoutY="208.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <TextField layoutX="30.0" layoutY="84.0" prefHeight="25.0" prefWidth="293.0" />
+                  <TextField layoutX="30.0" layoutY="152.0" prefHeight="25.0" prefWidth="293.0" />
+                  <ChoiceBox fx:id="ID_gender" layoutX="30.0" layoutY="212.0" prefHeight="26.0" prefWidth="50.0" />
+                  <Spinner fx:id="ID_num" layoutX="90.0" layoutY="213.0" />
+                  <Text layoutX="30.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID:" />
+                  <Text fx:id="ID_error" fill="RED" layoutX="30.0" layoutY="252.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
